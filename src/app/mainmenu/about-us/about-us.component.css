@@ -105,3 +105,35 @@ hr {
 li {
   cursor: pointer;
 }
+.wholegrid{
+    margin-bottom: 10px;
+  }
+  .txt{
+    margin-top:30px;
+  }
+  .followtxt{
+    margin:150px;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    height:400px;
+  }
+  .padding-li li{
+    cursor:pointer;
+    padding:20px;
+  }
+  .padding-li li a{
+    color:white;
+  }
+  .row-one{
+    height:60%;
+  }
+  .row-two{
+    height:40%;
+  }
+  
+  /* for mobile */
+  /* @media screen and (max-width: 767px){
+
+  } */

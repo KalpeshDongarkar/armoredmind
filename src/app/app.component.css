@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Questrial";
+  line-height: 1;
+  letter-spacing: 1.1px;
+  word-spacing: 1px;
+}
+.alignself {
+  text-align: center;
+  align-content: center;
+}
+.col-10 {
+  width: 10%;
+  align-self: center;
+  text-align: center;
+}
+.col-90 {
+  width: 90%;
+}
+.col-50 {
+  width: 50%;
+  height: auto;
+}
+.col-height-abus1 {
+  height: 750px;
+}
+.container {
+  margin: 5% 40% 5% 40%;
+}
+.flex {
+  display: flex;
+}
+.wrap {
+  word-wrap: break-word;
+}
+.disnone {
+  display: none;
+}
+.lil-text {
+  font-size: 13px;
+  line-height: 1;
+  align-content: center;
+  width: 100%;
+}
+.div-margin {
+  margin: 22px 0 20px 0;
+}
+.extramar {
+  margin: 0 0 0 220px;
+}
+.between {
+  justify-content: space-between;
+}
+.pad {
+  padding: 0 120px 0 0;
+}
+.padding20 {
+  padding: 20px;
+}
+.float-right {
+  float: right;
+  justify-content: right;
+  align-content: right;
+  text-align: right;
+}
+.float-left {
+  float: left;
+}
+.img-cover {
+  object-fit: cover;
+}
+.backgdBlack {
+  background-color: black;
+}
+.backgdWhite {
+  background-color: white;
+}
+.lstyle {
+  list-style: none;
+}
+h1 {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 0 5px 0;
+}
+hr {
+  opacity: 30%;
+}
+li {
+  cursor: pointer;
+}
+img{
+  cursor: pointer;
+}
+/* header */
+.mainHeader {
+  justify-content: space-between;
+  padding: 20px 50px 15px 50px;
+}
+.navlinks li {
+  margin: 0 9px 0 0;
+}
+.imgdiv {
+  margin: 5px;
+}
+.lstyle li {
+  padding: 9px;
+}
+.lstyle {
+  list-style: none;
+}
+.backgdGrey {
+  background-color: rgb(206, 206, 206);
+  width: 100%;
+}
+.fotRight {
+  /* float: right; */
+  justify-content: right;
+  /* text-align: right; */
+}
+/* footer */
+.footer {
+  margin: 2%;
+}
+.footer-cp {
+  margin: 0.5%;
+}
+.footer-list {
+  list-style: none;
+}
+.footer-list li {
+  font-size: 15px;
+  padding: 3px 0 5px 0;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  color: rgb(124, 124, 124);
+}
+.footer-list li a {
+  text-decoration: none;
+  color: rgb(124, 124, 124);
+}
+.footer-div-margin {
+  margin: 22px 20px 20px 20px;
+}
+.lastline li {
+  padding: 3px 15px 2px 15px;
+}
