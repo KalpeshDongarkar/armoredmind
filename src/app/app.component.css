@@ -5,8 +5,8 @@
   padding: 0%;
   font-family: "Questrial";
   line-height: 1;
-  letter-spacing: 1.1px;
-  word-spacing: 1px;
+  letter-spacing: 0.8px;
+  word-spacing: 0.8px;
 }
 .alignself {
   text-align: center;
@@ -172,15 +172,23 @@ img{
   top: 120px;
   width: 100%;
   left: 0;
-  padding: 20px 25% 20px 25%;
+  padding: 0px 0% 15px 20%;
   align-content: center;
   justify-content: center;
   position: absolute;
+  opacity: 0;
   visibility: hidden;
   background-color: white;
+  transition-delay: 0.8s ease-in;
 }
 
 .navlinks li:hover .mega-menu{
+  opacity: 100%;
   visibility: visible;
+  transition-delay: 0.8s ease-in;
+}
+.alignright{
+justify-content: right;
+justify-self: right;
 }
 
