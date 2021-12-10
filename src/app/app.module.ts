@@ -9,6 +9,8 @@ import { ContactUsComponent } from './mainmenu/contact-us/contact-us.component';
 import { FAQComponent } from './helpUs/faq/faq.component';
 import { AboutUsComponent } from './mainmenu/about-us/about-us.component';
 import { HomeComponent } from './mainmenu/home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -24,7 +26,8 @@ import { HomeComponent } from './mainmenu/home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,11 +1,11 @@
-<div class="container">
+<form class="container" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <label class="form-label"><strong>EMAIL ADDRESS *</strong></label>
-    <input class="form-input" type="text" id="email" name="wmailaddress">
+    <input class="form-input" type="text" id="email" formControlName="email">
     <label class="error-label, disnone">Please enter a valid email address</label>
     <label class="form-label"><strong>PASSWORD *</strong></label>
-    <input class="form-input" type="password" id="pass" name="password">
+    <input class="form-input" type="password" id="pass" formControlName="password">
     <label class="error-label, disnone">Please enter atleast 8 Character</label>
-    <button class="form-btn"><strong>LOGIN</strong></button>
+    <button class="form-btn" type="submit" [disabled]="!loginForm.valid" onclick="submitData()"><strong>LOGIN</strong></button>
     <div class="alignself div-margin">
         <label class="wrap lil-text">I've forgotten my password </label>
     </div>
@@ -13,4 +13,4 @@
         <label class="wrap lil-text">New to ARMORED MIND? <a class="links" href=""><strong>Create An Account</strong></a></label>
     </div>        
     <br>
-</div>
+</form>
