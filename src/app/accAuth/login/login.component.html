@@ -1,16 +1,31 @@
-<form class="container" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <label class="form-label"><strong>EMAIL ADDRESS *</strong></label>
-    <input class="form-input" type="text" id="email" formControlName="email">
-    <label class="error-label, disnone">Please enter a valid email address</label>
-    <label class="form-label"><strong>PASSWORD *</strong></label>
-    <input class="form-input" type="password" id="pass" formControlName="password">
-    <label class="error-label, disnone">Please enter atleast 8 Character</label>
-    <button class="form-btn" type="submit" [disabled]="!loginForm.valid" onclick="submitData()"><strong>LOGIN</strong></button>
-    <div class="alignself div-margin">
-        <label class="wrap lil-text">I've forgotten my password </label>
+<form class="container" #loginForm="ngForm" (ngSubmit)="submit()">
+  <label class="form-label"><strong>EMAIL ADDRESS<a style="font-size: 13px;" class="error-label">*</a></strong></label>
+  <input #email="ngModel" required email class="form-input" type="text" id="email" name="email" ngModel>
+  <div>
+    <div *ngIf="loginForm.submitted && email.errors?.required">
+      <label class="error-label">Field is Required</label>
     </div>
-    <div class="alignself div-margin">
-        <label class="wrap lil-text">New to ARMORED MIND? <a class="links" href=""><strong>Create An Account</strong></a></label>
-    </div>        
-    <br>
+    <div *ngIf="loginForm.submitted && email.errors?.email">
+      <label class="error-label">Please enter a valid Email</label>
+    </div>
+  </div>
+  <label class="form-label"><strong>PASSWORD<a style="font-size: 13px;" class="error-label">*</a></strong></label>
+  <input #password="ngModel" minlength="8" required class="form-input" type="password" id="pass" name="password" ngModel>
+  <div>
+    <div *ngIf="loginForm.submitted && password.errors?.required">
+      <label class="error-label">Field is Required</label>
+    </div>
+    <div *ngIf="loginForm.submitted && password.errors?.minlength">
+      <label class="error-label">Please enter atleast 8 Character</label>
+    </div>
+  </div>
+  <button class="form-btn" type="submit"><strong>LOGIN</strong></button>
+  <div class="alignself div-margin">
+    <label class="wrap lil-text">I've forgotten my password </label>
+  </div>
+  <div class="alignself div-margin">
+    <label class="wrap lil-text">New to ARMORED MIND? <a class="links" routerLink="/register"><strong>Create An
+          Account</strong></a></label>
+  </div>
+  <br>
 </form>

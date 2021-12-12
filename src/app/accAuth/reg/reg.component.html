@@ -1,36 +1,70 @@
-<form class="container">
-    <label class="form-label"><strong>FIRST NAME *</strong></label>
-    <input class="form-input"  type="text" id="fname" name="firstname">
-    <label class="error-label, disnone">Please enter a valid name</label>
-    <label class="form-label"><strong>LAST NAME *</strong></label>
-    <input class="form-input" type="text" id="lname" name="lastname">
-    <label class="error-label, disnone">Please enter a valid name</label>
-    <label class="form-label"><strong>EMAIL ADDRESS *</strong></label>
-    <input class="form-input" type="text" id="email" name="wmailaddress">
-    <label class="error-label, disnone">Please enter a valid email address</label>
-    <label class="form-label"><strong>PASSWORD *</strong></label>
-    <input class="form-input" type="password" id="pass" name="password">
-    <label class="error-label, disnone">Please enter atleast 8 Character</label>
-    <label class="form-label"><strong>DATE OF BIRTH *</strong></label>
-    <div class="pad flex between">
-        <input class="form-date-input" type="text" id="fname" name="date">
-        <input class="form-date-input" type="text" id="fname" name="month">
-        <input class="form-date-input" type="text" id="fname" name="year">
+<form class="container" #signinForm="ngForm" (ngSubmit)="signinForm.form.valid && submitData()">
+  <label class="form-label"><strong>FIRST NAME<a style="font-size: 13px;" class="error-label">*</a></strong></label>
+  <input #firstName="ngModel" required class="form-input" type="text" id="fname" name="firstname" ngModel>
+  <div>
+    <div *ngIf="signinForm.submitted && firstName.errors?.required">
+      <label class="error-label">Field is Requirede</label>
     </div>
-    <div class="flex div-margin">
-        <div class="col-10"><input class="checkbox" type="checkbox" name="" id=""></div>
-        <div class="col-90 wrap"><label class="lil-text">I wish to receive the latest news and exclusive discounts by receiving Gymshark
-                Marketing emails</label><a class="errorlabel">*</a></div>
+    <div *ngIf="firstName.touched && firstName.invalid">
+      <label class="error-label">Please enter a valid name</label>
     </div>
-    <div>
-        <label class="wrap lil-text">By creating your account, you agree to our Terms and Conditions. For full details on how and why
-            Gymshark uses your personal data please see our Privacy Notice.
-        </label>
+  </div>
+  <label class="form-label"><strong>LAST NAME<a style="font-size: 13px;" class="error-label">*</a></strong></label>
+  <input #lastName="ngModel" required class="form-input" type="text" id="lname" name="lastname" ngModel>
+  <div>
+    <div *ngIf="signinForm.submitted && lastName.errors?.required">
+      <label class="error-label">Field is Required</label>
     </div>
-    <button class="form-btn"><strong>SUBMIT</strong></button>
-    <div class="alignself div-margin">
-        <label class="wrap lil-text">Already have one <a class="links" href=""><strong>Login to MyAccount</strong></a></label>
-    </div>   
+    <div *ngIf="lastName.touched && lastName.invalid">
+      <label class="error-label">Please enter a valid name</label>
+    </div>
+  </div>
+  <label class="form-label"><strong>EMAIL ADDRESS<a style="font-size: 13px;" class="error-label">*</a></strong></label>
+  <input #email="ngModel" required email class="form-input" type="text" id="email" name="emailaddress" ngModel>
+  <div>
+    <div *ngIf="signinForm.submitted && email.errors?.required">
+      <label class="error-label">Field is Required</label>
+    </div>
+    <div *ngIf="signinForm.submitted && email.errors?.email">
+      <label class="error-label">Please enter a valid Email</label>
+    </div>
+  </div>
+  <label class="form-label"><strong>PASSWORD<a style="font-size: 13px;" class="error-label">*</a></strong></label>
+  <input #password="ngModel" minlength="8" class="form-input" type="password" id="pass" name="password" ngModel>
+  <div>
+    <div *ngIf="signinForm.submitted && password.errors?.required">
+      <label class="error-label">Field is Required</label>
+    </div>
+    <div *ngIf="signinForm.submitted && password.errors?.minlength">
+      <label class="error-label">Please enter atleast 8 Character</label>
+    </div>
+  </div>
+  <label class="form-label"><strong>DATE OF BIRTH<a style="font-size: 13px;" class="error-label">*</a></strong></label>
+  <div class="pad flex between">
+    <input class="form-date-input" type="text" id="date" name="date" ngModel>
+    <input class="form-date-input" type="text" id="month" name="month" ngModel>
+    <input class="form-date-input" type="text" id="year" name="year" ngModel>
+  </div>
+  <div class="flex div-margin">
+    <div class="col-10"><input #check="ngModel" required class="checkbox" type="checkbox" name="checkbox" id="check"
+        ngModel></div>
+    <div class="col-90 wrap"><label class="lil-text"><a style="font-size: 13px;" class="error-label">*</a> I wish to
+        receive the latest news and exclusive discounts by
+        receiving ARMORED MIND Marketing emails</label><a class="errorlabel"></a></div>
+  </div>
+  <div *ngIf="signinForm.submitted && check.errors?.required">
+    <label class="error-label">Field is Required</label>
+  </div>
+  <div>
+    <label class="wrap lil-text">By creating your account, you agree to our Terms and Conditions. For full details on
+      how and why ARMORED MIND uses your personal data please see our Privacy Notice.
+    </label>
+  </div>
+  <button class="form-btn"><strong>SUBMIT</strong></button>
+  <div class="alignself div-margin">
+    <label class="wrap lil-text">Already have one <a class="links" routerLink="/login"><strong>Login to
+          MyAccount</strong></a></label>
+  </div>
 </form>
 
 <router-outlet></router-outlet>

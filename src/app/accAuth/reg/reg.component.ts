@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './reg.component.html',
   styleUrls: ['./reg.component.css']
 })
-export class RegComponent implements OnInit {
+export class RegComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  submitData() {
+    console.log("submitted data")
   }
 
 }

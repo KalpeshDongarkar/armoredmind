@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 * {
   box-sizing: border-box;
-  margin: 0%;
-  padding: 0%;
   font-family: "Questrial";
   line-height: 1;
   letter-spacing: 0.8px;
   word-spacing: 0.8px;
+}
+html,body{
+  overflow-x: hidden; 
 }
 .alignself {
   text-align: center;
@@ -81,7 +82,7 @@
 .lstyle {
   list-style: none;
 }
-.textstylebtn{
+.textstylebtn {
   background: transparent;
   border: none;
   font-size: 18px;
@@ -99,13 +100,14 @@ hr {
 li {
   cursor: pointer;
 }
-img{
+img {
   cursor: pointer;
 }
 /* header */
 .mainHeader {
   justify-content: space-between;
   padding: 20px 50px 15px 50px;
+  width: 100%;
 }
 .navlinks li {
   margin: 0 9px 0 0;
@@ -156,7 +158,7 @@ img{
   padding: 3px 15px 2px 15px;
 }
 
-.dropdown-content{
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -165,14 +167,14 @@ img{
   box-shadow: 0px 10px 20px 0px rgba(160, 160, 160, 0.2);
   z-index: 1;
 }
-.textstylebtn:hover .dropdown-content{
+.textstylebtn:hover .dropdown-content {
   display: block;
 }
-.mega-menu{
-  top: 120px;
+.mega-menu {
+  top: 100px;
   width: 100%;
   left: 0;
-  padding: 0px 0% 15px 20%;
+  padding: 15px 12px 0px 25%;
   align-content: center;
   justify-content: center;
   position: absolute;
@@ -182,13 +184,12 @@ img{
   transition-delay: 0.8s ease-in;
 }
 
-.navlinks li:hover .mega-menu{
+.navlinks li:hover .mega-menu {
   opacity: 100%;
   visibility: visible;
   transition-delay: 0.8s ease-in;
 }
-.alignright{
-justify-content: right;
-justify-self: right;
+.alignright {
+  justify-content: right;
+  justify-self: right;
 }
-

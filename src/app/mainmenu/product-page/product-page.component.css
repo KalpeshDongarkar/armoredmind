@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Questrial";
+  line-height: 1;
+  letter-spacing: 0.8px;
+  word-spacing: 0.8px;
+}
+
+.alignself {
+  text-align: center;
+  align-content: center;
+}
+.col-10 {
+  width: 10%;
+  align-self: center;
+  text-align: center;
+}
+.col-90 {
+  width: 90%;
+}
+.col-50 {
+  width: 50%;
+  height: auto;
+}
+.col-height-abus1 {
+  height: 750px;
+}
+.container {
+  margin: 5% 40% 5% 40%;
+}
+.flex {
+  display: flex;
+}
+.wrap {
+  word-wrap: break-word;
+}
+.disnone {
+  display: none;
+}
+.lil-text {
+  font-size: 13px;
+  line-height: 1;
+  align-content: center;
+  width: 100%;
+}
+.div-margin {
+  margin: 22px 0 20px 0;
+}
+.extramar {
+  margin: 0 0 0 220px;
+}
+.between {
+  justify-content: space-between;
+}
+.pad {
+  padding: 0 120px 0 0;
+}
+.padding20 {
+  padding: 20px;
+}
+.float-right {
+  float: right;
+  justify-content: right;
+  align-content: right;
+  text-align: right;
+}
+.float-left {
+  float: left;
+}
+.img-cover {
+  object-fit: cover;
+}
+.backgdBlack {
+  background-color: black;
+}
+.backgdWhite {
+  background-color: white;
+}
+.lstyle {
+  list-style: none;
+}
+.textstylebtn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  margin: 5px 10px 5px 10px;
+  cursor: pointer;
+}
+h1 {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 0 5px 0;
+}
+h2 {
+  font-size: 25px;
+  letter-spacing: 3px;
+  padding: 0 0 5px 0;
+}
+hr {
+  opacity: 30%;
+}
+li {
+  cursor: pointer;
+}
+img {
+  cursor: pointer;
+}
+.main-content {
+  margin: 0 0 40px 0;
+}
+.pdt-margin {
+  margin: 0;
+}
+.mainHead {
+  background-color: rgb(243, 243, 243);
+  padding: 50px 0px 70px 120px;
+}
+.content {
+  margin: 20px 3% 15px 3%;
+  width: fit-content;
+  block-size: fit-content;
+  flex-wrap: wrap;
+  justify-content: start;
+  /* justify-content: space-between; */
+  /* word-wrap: break-word; */
+  /* overflow-wrap: break-word; */
+}
+
+.fliter-list {
+  padding: 0px 0px 0px 1%;
+}
+.fliter-list a {
+  padding: 12px 25px 12px 25px;
+}
+.fliter-list a:hover {
+  background: rgb(243, 243, 243);
+  border-radius: 5px;
+}
+.pdtcard {
+  width: 320px;
+  margin: 1%;
+  cursor: pointer;
+}
+.pdtImg {
+  height: 450px;
+  width: 320px;
+  background-color: rgb(243, 243, 243);
+}
+.pdt-info h1 {
+  margin: 10px 0 0 0;
+}
+.pdt-info p {
+  padding: 3px 0 3px 0;
+}
+.price h1 {
+  text-align: right;
+}
