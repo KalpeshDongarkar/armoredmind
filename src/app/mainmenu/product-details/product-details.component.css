@@ -99,100 +99,78 @@ hr {
 }
 li {
   cursor: pointer;
+
 }
 img {
   cursor: pointer;
 }
-/* header */
-.mainHeader {
-  justify-content: space-between;
-  padding: 20px 50px 15px 50px;
-  width: 100%;
+.container{
+  margin: 3%;
 }
-.navlinks li {
-  margin: 0 9px 0 0;
+.col-40{
+  width: 40%;
+
 }
-.imgdiv {
+.content {
+  margin: 0% 10% 0% 10%;
+  width: fit-content;
+  block-size: fit-content;
+  flex-wrap: wrap;
+  justify-content: start;
+  /* justify-content: space-between; */
+  /* word-wrap: break-word; */
+  /* overflow-wrap: break-word; */
+}
+.col-60{
+  width: 60%;
+
+}
+.col-50{
+  width: 50%;
+  height: 520px;
+}
+.col-30{
+  width: 30%;
+  height: 400px;
+}
+
+.divMargin{
   margin: 5px;
 }
-.lstyle li {
-  padding: 9px;
+.col-65{
+  width: 65%;
 }
-.lstyle {
-  list-style: none;
+.col-35{
+  width: 35%;
+  margin: 10px 0 0 70px;
 }
-.backgdGrey {
-  background-color: rgb(206, 206, 206);
+.flex{
+  justify-content: space-between;
+  display: flex;
+}
+.pdtDetails{
+  display: flex;
+}
+.imgs{
   width: 100%;
+  background-color: rgb(243, 243, 243);
 }
-.fotRight {
-  /* float: right; */
-  justify-content: right;
-  /* text-align: right; */
-}
-/* footer */
-.footer {
-  margin: 2%;
-}
-.footer-cp {
-  margin: 0.5%;
-}
-.footer-list {
-  list-style: none;
-}
-.footer-list li {
-  font-size: 13px;
-  padding: 3px 0 5px 0;
-  cursor: pointer;
-  line-height: 1.1;
-  letter-spacing: 0.5px;
-  color: rgb(124, 124, 124);
-  font-weight: bold;
-}
-.footer-list li a {
-  text-decoration: none;
-  color: rgb(124, 124, 124);
-  font-weight: bold;
-}
-.footer-div-margin {
-  margin: 22px 20px 20px 20px;
-}
-.lastline li {
-  padding: 3px 15px 2px 15px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 100%;
-  left: 0;
-  box-shadow: 0px 10px 20px 0px rgba(160, 160, 160, 0.2);
-  z-index: 1;
-}
-.textstylebtn:hover .dropdown-content {
-  display: block;
-}
-.mega-menu {
-  top: 100px;
-  width: 100%;
-  left: 0;
-  padding: 15px 12px 0px 25%;
-  align-content: center;
+.BTN{
   justify-content: center;
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-  background-color: white;
-  transition-delay: 0.8s ease-in;
+  margin: 10px 0 10px 0;
 }
-
-.navlinks li:hover .mega-menu {
-  opacity: 100%;
-  visibility: visible;
-  transition-delay: 0.8s ease-in;
+.BTN button{
+  text-align: center;
+  width: 100%;
+  padding: 18px 0 18px 0;
+  border-radius: 35px;
+  border: none;
+  background-color: black;
+  color: white;
 }
-.alignright {
-  justify-content: right;
-  justify-self: right;
+.des{
+  word-wrap: break-word;
+}
+.lstyle{
+  list-style: none;
 }

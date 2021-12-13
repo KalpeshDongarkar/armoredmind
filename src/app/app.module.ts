@@ -11,6 +11,7 @@ import { AboutUsComponent } from './mainmenu/about-us/about-us.component';
 import { HomeComponent } from './mainmenu/home/home.component';
 import { FormsModule, FormGroup, FormControl} from '@angular/forms';
 import { ProductPageComponent } from './mainmenu/product-page/product-page.component';
+import { ProductDetailsComponent } from './mainmenu/product-details/product-details.component';
 
 
 
@@ -24,7 +25,8 @@ import { ProductPageComponent } from './mainmenu/product-page/product-page.compo
     FAQComponent,
     AboutUsComponent,
     HomeComponent,
-    ProductPageComponent
+    ProductPageComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
